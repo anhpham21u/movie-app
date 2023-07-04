@@ -1,0 +1,14 @@
+.link {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        color: #ff8a00
+    }
+}
+
+.headLink {
+    color: #ff8a00;
+    font-weight: 600;
+    font-size: 20px;
+}

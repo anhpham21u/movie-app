@@ -1,0 +1,7 @@
+.input {
+    width: 700px !important;
+
+    @media (max-width: 992px) {
+        width: 100% !important;
+    }
+}

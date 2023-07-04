@@ -1,0 +1,21 @@
+.listMovie {
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    white-space: nowrap;
+}
+
+.listMovie::-webkit-scrollbar {
+    background-color: #212529;
+    height: 13px;
+    width: 10px;
+}
+
+.listMovie::-webkit-scrollbar-thumb {
+    background-color: #dc8a00;
+    border-radius: 15px;
+
+    &:hover {
+        background-color: #a96a00;
+    }
+}

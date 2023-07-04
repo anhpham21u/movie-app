@@ -1,0 +1,19 @@
+.head {
+    cursor: pointer;
+    font-weight: 600;
+    transform-origin: center;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.btn {
+    color: #ff8a00 !important;
+    outline: 1px solid #ff8a00;
+
+    &:hover {
+        outline-color: white;
+        color: white !important;
+    }
+}
