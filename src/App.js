@@ -11,7 +11,7 @@ import Search from "./page/Search";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState, useEffect, createContext } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./styles.scss";
+import "./scss/styles.scss";
 
 export const ApiContext = createContext();
 

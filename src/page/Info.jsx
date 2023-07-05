@@ -4,7 +4,7 @@ import styles from "./info.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "react-bootstrap";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 function Info() {
@@ -64,7 +64,7 @@ function Info() {
 
   return (
     <div>
-      <MyNav />
+      <MyNav img={"../img/logo.png"} />
 
       {isTakeData && (
         <div className="text-light" style={{ backgroundColor: "#1a1a1a" }}>
@@ -180,7 +180,7 @@ function Info() {
         </div>
       )}
 
-      <Footer />
+      <Footer img={"../img/logo.png"} />
     </div>
   );
 }

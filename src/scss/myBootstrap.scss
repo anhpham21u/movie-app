@@ -1,0 +1,10 @@
+$myTheme-colors: (
+    "myDark": #1a1a1a,
+    "myDark2": #111
+);
+
+@import "bootstrap/scss/_functions";
+@import "bootstrap/scss/_variables";
+
+$theme-colors: map-merge($theme-colors, $myTheme-colors);
+@import "bootstrap/scss/bootstrap";

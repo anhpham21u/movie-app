@@ -1,0 +1,14 @@
+@import "myBootstrap";
+
+.myText-yellow {
+    color: #ff8a00;
+}
+
+.logo {
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}

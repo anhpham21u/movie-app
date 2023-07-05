@@ -8,8 +8,8 @@ function Rate() {
   const { isTakeRate, dataRate } = useContext(ApiContext);
 
   return (
-    <div className="bg-dark text-light">
-      <MyNav />
+    <div className="bg-myDark text-light">
+      <MyNav img={"img/logo.png"} />
 
       <div className="px-5 mt-5">
         <h4 className="myText-yellow mb-5">PHIM THEO ĐÁNH GIÁ</h4>
@@ -21,7 +21,7 @@ function Rate() {
         </div>
       </div>
 
-      <Footer />
+      <Footer img={"img/logo.png"} />
     </div>
   );
 }

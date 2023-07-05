@@ -1,23 +1,23 @@
-import stylesNav from "./navbar.module.scss";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import styles from "./footer.module.scss";
 
-function Footer() {
+function Footer({ img }) {
   const navigate = useNavigate();
 
   return (
-    <div style={{ backgroundColor: "#111" }}>
+    <div className="bg-myDark2">
       <div className="row p-5">
         <div className="col-sm text-center">
-          <p
-            className={stylesNav.head + "  myText-yellow fs-2"}
+          <img
+            src={img}
+            alt="logo"
+            width={"100px"}
+            className="logo"
             onClick={() => {
               navigate("/");
             }}
-          >
-            Movie
-          </p>
+          />
         </div>
 
         <div className="col-sm">

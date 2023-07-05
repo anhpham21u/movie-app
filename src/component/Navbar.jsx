@@ -3,11 +3,11 @@ import { Link, useNavigate } from "react-router-dom";
 import { useRef } from "react";
 import styles from "./navbar.module.scss";
 
-function MyNav() {
+function MyNav({ img }) {
   const navigate = useNavigate();
   const inputSearchEle = useRef(null);
 
-  const handleClick = () => {
+  const handleHead = () => {
     navigate("/");
   };
 
@@ -16,33 +16,34 @@ function MyNav() {
   };
 
   return (
-    <div style={{ backgroundColor: "#111" }}>
+    <div className={"bg-myDark2"}>
       <Navbar expand="lg" className="navbar-dark px-5">
-        <Navbar.Brand
-          className={styles.head + " myText-yellow fs-2"}
-          onClick={handleClick}
-        >
-          Movie
-        </Navbar.Brand>
+        <img
+          src={img}
+          alt="logo"
+          width={"75px"}
+          className="logo"
+          onClick={handleHead}
+        />
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Link to="/" className={"nav-link fs-5 mx-2"}>
+            <Link to="/" className={"nav-link mx-2"}>
               Trang chủ
             </Link>
-            <Link to="/login" className={"nav-link fs-5 mx-2"}>
+            <Link to="/login" className={"nav-link mx-2"}>
               Đăng nhập
             </Link>
-            <Link to="/now" className={"nav-link fs-5 mx-2"}>
+            <Link to="/now" className={"nav-link mx-2"}>
               Đề cử
             </Link>
-            <Link to="/popular" className={"nav-link fs-5 mx-2"}>
+            <Link to="/popular" className={"nav-link mx-2"}>
               Phổ biến
             </Link>
-            <Link to="/rate" className={"nav-link fs-5 mx-2"}>
+            <Link to="/rate" className={"nav-link mx-2"}>
               Đánh giá
             </Link>
-            <Link to="/upcoming" className={"nav-link fs-5 mx-2"}>
+            <Link to="/upcoming" className={"nav-link mx-2"}>
               Sắp chiếu
             </Link>
           </Nav>

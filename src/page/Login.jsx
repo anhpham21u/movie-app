@@ -6,9 +6,12 @@ import { Button, Form } from "react-bootstrap";
 function Login() {
   return (
     <div>
-      <Navbar />
+      <Navbar img={"img/logo.png"} />
 
-      <div className="px-5 bg-dark text-light py-5" style={{ height: "65vh" }}>
+      <div
+        className="px-5 bg-myDark text-light py-5"
+        style={{ height: "65vh" }}
+      >
         <h4 className="text-center p-4" style={{ color: "#ff8a00" }}>
           Đăng nhập
         </h4>
@@ -45,7 +48,7 @@ function Login() {
         </div>
       </div>
 
-      <Footer />
+      <Footer img={"img/logo.png"} />
     </div>
   );
 }
