@@ -64,7 +64,7 @@ function Info() {
 
   return (
     <div>
-      <MyNav img={"../img/logo.png"} />
+      <MyNav />
 
       {isTakeData && (
         <div className="text-light" style={{ backgroundColor: "#1a1a1a" }}>
@@ -180,7 +180,7 @@ function Info() {
         </div>
       )}
 
-      <Footer img={"../img/logo.png"} />
+      <Footer />
     </div>
   );
 }

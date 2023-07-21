@@ -1,8 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import styles from "./footer.module.scss";
+import logoImg from "./../assets/img/logo.png";
 
-function Footer({ img }) {
+function Footer() {
   const navigate = useNavigate();
 
   return (
@@ -10,7 +11,7 @@ function Footer({ img }) {
       <div className="row p-5">
         <div className="col-sm text-center">
           <img
-            src={img}
+            src={logoImg}
             alt="logo"
             width={"100px"}
             className="logo"

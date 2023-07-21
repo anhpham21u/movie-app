@@ -3,6 +3,7 @@ import Movie from "./../component/Movie.jsx";
 import PosterMovie from "../component/PosterMovie.jsx";
 import styles from "./home.module.scss";
 import Footer from "../component/Footer.jsx";
+import bg1Img from "./../assets/img/bg-1.jpg";
 import { ApiContext } from "./../App.js";
 import { useContext } from "react";
 
@@ -20,14 +21,13 @@ function Home() {
 
   return (
     <div>
-      <MyNav img={"img/logo.png"} />
+      <MyNav />
 
       <div className="bg-myDark text-light">
         <div className="position-relative">
           <div
             style={{
-              backgroundImage:
-                "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/bg-1.jpg)",
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bg1Img})`,
             }}
             className={styles.background}
           ></div>
@@ -70,7 +70,7 @@ function Home() {
         </div>
       </div>
 
-      <Footer img={"img/logo.png"} />
+      <Footer />
     </div>
   );
 }

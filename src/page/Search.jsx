@@ -32,7 +32,7 @@ function Search() {
 
   return (
     <>
-      <MyNav img={"img/logo.png"} />
+      <MyNav />
 
       {isTakeApi && (
         <div style={{ backgroundColor: "#1a1a1a" }}>
@@ -49,7 +49,7 @@ function Search() {
         </div>
       )}
 
-      <Footer img={"img/logo.png"} />
+      <Footer />
     </>
   );
 }

@@ -9,7 +9,7 @@ function Now() {
 
   return (
     <div className="bg-myDark text-light">
-      <MyNav img={"img/logo.png"} />
+      <MyNav />
 
       <div className="px-5 mt-5">
         <h4 className="myText-yellow mb-5">PHIM ĐỀ CỬ</h4>
@@ -21,7 +21,7 @@ function Now() {
         </div>
       </div>
 
-      <Footer img={"img/logo.png"} />
+      <Footer />
     </div>
   );
 }

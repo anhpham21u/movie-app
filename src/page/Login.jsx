@@ -6,7 +6,7 @@ import { Button, Form } from "react-bootstrap";
 function Login() {
   return (
     <div>
-      <Navbar img={"img/logo.png"} />
+      <Navbar />
 
       <div
         className="px-5 bg-myDark text-light py-5"
@@ -48,7 +48,7 @@ function Login() {
         </div>
       </div>
 
-      <Footer img={"img/logo.png"} />
+      <Footer />
     </div>
   );
 }

@@ -9,7 +9,7 @@ function Upcoming() {
 
   return (
     <div className="bg-myDark text-light">
-      <MyNav img={"img/logo.png"} />
+      <MyNav />
 
       <div className="px-5 mt-5">
         <h4 className="myText-yellow mb-5">PHIM SẮP CHIẾU</h4>
@@ -21,7 +21,7 @@ function Upcoming() {
         </div>
       </div>
 
-      <Footer img={"img/logo.png"} />
+      <Footer />
     </div>
   );
 }

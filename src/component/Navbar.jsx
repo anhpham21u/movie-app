@@ -2,8 +2,9 @@ import { Navbar, Nav, Form, Button } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import { useRef } from "react";
 import styles from "./navbar.module.scss";
+import logoImg from "./../assets/img/logo.png";
 
-function MyNav({ img }) {
+function MyNav() {
   const navigate = useNavigate();
   const inputSearchEle = useRef(null);
 
@@ -19,7 +20,7 @@ function MyNav({ img }) {
     <div className={"bg-myDark2"}>
       <Navbar expand="lg" className="navbar-dark px-5">
         <img
-          src={img}
+          src={logoImg}
           alt="logo"
           width={"75px"}
           className="logo"
