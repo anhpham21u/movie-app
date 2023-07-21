@@ -104,14 +104,14 @@ function App() {
     >
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/now" element={<Now />} />
-          <Route path="/popular" element={<Popular />} />
-          <Route path="/rate" element={<Rate />} />
-          <Route path="/upcoming" element={<Upcoming />} />
-          <Route path="/info/:id" element={<Info />} />
-          <Route path="/search" element={<Search />} />
+          <Route exact path="/movie-app" element={<Home />} />
+          <Route path="/movie-app/login" element={<Login />} />
+          <Route path="/movie-app/now" element={<Now />} />
+          <Route path="/movie-app/popular" element={<Popular />} />
+          <Route path="/movie-app/rate" element={<Rate />} />
+          <Route path="/movie-app/upcoming" element={<Upcoming />} />
+          <Route path="/movie-app/info/:id" element={<Info />} />
+          <Route path="/movie-app/search" element={<Search />} />
         </Routes>
       </BrowserRouter>
     </ApiContext.Provider>

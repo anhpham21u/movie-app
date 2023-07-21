@@ -16,7 +16,7 @@ function Footer() {
             width={"100px"}
             className="logo"
             onClick={() => {
-              navigate("/");
+              navigate("/movie-app");
             }}
           />
         </div>
@@ -27,22 +27,22 @@ function Footer() {
               <p className={styles.headLink}>Thể loại</p>
             </li>
             <li className="mb-2">
-              <Link className={styles.link} to="/now">
+              <Link className={styles.link} to="/movie-app/now">
                 Phim đề cử
               </Link>
             </li>
             <li className="mb-2">
-              <Link className={styles.link} to="/popular">
+              <Link className={styles.link} to="/movie-app/popular">
                 Phim phổ biến
               </Link>
             </li>
             <li className="mb-2">
-              <Link className={styles.link} to="/rate">
+              <Link className={styles.link} to="/movie-app/rate">
                 Phim theo đánh giá
               </Link>
             </li>
             <li className="mb-2">
-              <Link className={styles.link} to="/upcoming">
+              <Link className={styles.link} to="/movie-app/upcoming">
                 Phim sắp chiếu
               </Link>
             </li>

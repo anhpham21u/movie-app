@@ -9,7 +9,7 @@ function Movie(props) {
   const headLink = "https://image.tmdb.org/t/p/original";
 
   const handleClick = () => {
-    navigate(`/info/${props.data.id}`);
+    navigate(`/movie-app/info/${props.data.id}`);
   };
 
   return (

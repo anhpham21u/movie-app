@@ -9,11 +9,11 @@ function MyNav() {
   const inputSearchEle = useRef(null);
 
   const handleHead = () => {
-    navigate("/");
+    navigate("/movie-app");
   };
 
   const handleSearch = () => {
-    navigate(`/search?q=${inputSearchEle.current.value}`);
+    navigate(`/movie-app/search?q=${inputSearchEle.current.value}`);
   };
 
   return (
@@ -29,22 +29,22 @@ function MyNav() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Link to="/" className={"nav-link mx-2"}>
+            <Link to="/movie-app" className={"nav-link mx-2"}>
               Trang chủ
             </Link>
-            <Link to="/login" className={"nav-link mx-2"}>
+            <Link to="/movie-app/login" className={"nav-link mx-2"}>
               Đăng nhập
             </Link>
-            <Link to="/now" className={"nav-link mx-2"}>
+            <Link to="/movie-app/now" className={"nav-link mx-2"}>
               Đề cử
             </Link>
-            <Link to="/popular" className={"nav-link mx-2"}>
+            <Link to="/movie-app/popular" className={"nav-link mx-2"}>
               Phổ biến
             </Link>
-            <Link to="/rate" className={"nav-link mx-2"}>
+            <Link to="/movie-app/rate" className={"nav-link mx-2"}>
               Đánh giá
             </Link>
-            <Link to="/upcoming" className={"nav-link mx-2"}>
+            <Link to="/movie-app/upcoming" className={"nav-link mx-2"}>
               Sắp chiếu
             </Link>
           </Nav>
