@@ -16,7 +16,7 @@ function Movie(props) {
     <div
       className={
         props.first === false
-          ? "me-3 mb-3 " + styles.movie
+          ? "mb-3 " + styles.movie
           : "me-3 mb-5 d-lg-flex"
       }
     >
