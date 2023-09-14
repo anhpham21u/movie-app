@@ -15,9 +15,14 @@ function Upcoming() {
         <h4 className="myText-yellow mb-5">PHIM SẮP CHIẾU</h4>
         <div className={"mb-5"}>
           {isTakeComing &&
-            dataComing.results.map((val, idx) => (
-              <Movie data={val} key={idx} first={false} />
-            ))}
+            <div className="row">
+              {dataComing.results.map((val, idx) => (
+                <div className="col-xl-3 col-md-4 col-sm-6">
+                  <Movie data={val} key={idx} first={false} />
+                </div>
+              ))}
+            </div>
+          }
         </div>
       </div>
 

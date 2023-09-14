@@ -41,9 +41,13 @@ function Search() {
               Kết quả tìm kiếm cho: {queryValue}
             </h4>
             <div className={"mb-5"}>
-              {dataSearch.map((val, idx) => (
-                <Movie data={val} key={idx} first={false} />
-              ))}
+              <div className="row">
+                {dataSearch.map((val, idx) => (
+                  <div className="col-xl-3 col-md-4 col-sm-6">
+                    <Movie data={val} key={idx} first={false} />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
